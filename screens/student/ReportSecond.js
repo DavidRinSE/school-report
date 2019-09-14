@@ -31,7 +31,7 @@ const ReportSecond = props => {
                 <TextInput multiline numberOfLines={8} style={styles.input} />
             </View>
             <View style={styles.inputView}>
-                <Text style={{ fontSize: 15 }}>
+                <Text style={{ fontSize: 15, }}>
                     Do you think you or someone else could be in danger?
                 </Text>
 
@@ -47,13 +47,13 @@ const ReportSecond = props => {
                     value={checked}
                     onChange={() => setChecked(!checked)}
                 />
-                <Text>
+                <Text style={{textAlign:'center'}}>
                     I understand that intentionally false reporting is unethical, and a crime.
                 </Text>
             </View>
             <View style={styles.buttonView}>
 
-            <Button onPress={() => checked ? props.navigation.navigate('End') : null} title="Report"/>
+            <Button onPress={() => props.navigation.navigate('End')} title="Report"/>
             </View>
         </ScrollView>
     );
@@ -67,7 +67,8 @@ const styles = StyleSheet.create({
     },
     subHeader: {
         marginLeft: 50,
-        fontSize: 15
+        fontSize: 15,
+        marginBottom: 20
     },
     input: {
         width: 250,
@@ -78,17 +79,21 @@ const styles = StyleSheet.create({
         padding: 5
     },
     inputView: {
-        marginLeft: 70,
-        marginTop: 60
+        marginHorizontal: 70,
+        marginTop: 6,
+        textAlign:'center',
+        justifyContent: 'center',
+        alignItems:'center'        
     },
     CheckBox: {
-        marginLeft: 70,
+        marginHorizontal: 70,
+        textAlign:'center',
         marginTop: 40
     },
     buttonView: {
         width: 120,
         alignSelf: 'center',
-        marginBottom: 10,
+        marginVertical: 10,
     }
 });
 
