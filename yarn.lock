@@ -1624,7 +1624,7 @@ cliui@^5.0.0:
     strip-ansi "^5.2.0"
     wrap-ansi "^5.1.0"
 
-cloudant-follow@^0.18.1, cloudant-follow@~0:
+cloudant-follow@^0.18.1:
   version "0.18.2"
   resolved "https://registry.yarnpkg.com/cloudant-follow/-/cloudant-follow-0.18.2.tgz#35dd7b29c5b9c58423d50691f848a990fbe2c88f"
   integrity sha512-qu/AmKxDqJds+UmT77+0NbM7Yab2K3w0qSeJRzsq5dRWJTEJdWeb+XpG4OpKuTE9RKOa/Awn2gR3TTnvNr3TeA==
@@ -1632,27 +1632,6 @@ cloudant-follow@^0.18.1, cloudant-follow@~0:
     browser-request "~0.3.0"
     debug "^4.0.1"
     request "^2.88.0"
-
-cloudant-nano@6.7.0:
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/cloudant-nano/-/cloudant-nano-6.7.0.tgz#dc78e189b8b87235f46d78386d609d2f9bf4e73e"
-  integrity sha1-3Hjhibi4cjX0bXg4bWCdL5v05z4=
-  dependencies:
-    cloudant-follow "~0"
-    debug "^3.1.0"
-    errs "^0.3.2"
-    request "^2.81.0"
-    underscore "^1.8.3"
-
-cloudant@^1.10.0-NOTICE:
-  version "1.10.0-NOTICE"
-  resolved "https://registry.yarnpkg.com/cloudant/-/cloudant-1.10.0-NOTICE.tgz#54803089c6d866b8fde3b0e3207d9a3d32afd8c7"
-  integrity sha512-cVdaqslZlngD+uvcuaM9fV5clga49y+Pm2swUls3zafUyHioRmL2eTe1JgzFjHpaDNbdukABUt3pIKCCRl2cgA==
-  dependencies:
-    async "2.1.2"
-    cloudant-nano "6.7.0"
-    debug "^3.1.0"
-    request "^2.81.0"
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -5564,11 +5543,6 @@ ultron@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.1.1.tgz#9fe1536a10a664a65266a1e3ccf85fd36302bc9c"
   integrity sha512-UIEXBNeYmKptWH6z8ZnqTeS8fV74zG0/eRU9VGkpzz+LIJNs8W/zM/L+7ctCkRrgbNnnR0xxw4bKOr0cW0N0Og==
-
-underscore@^1.8.3:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
-  integrity sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

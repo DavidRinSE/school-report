@@ -52,3 +52,20 @@ const styles = StyleSheet.create({
     padding: 20,
   },
 });
+
+
+function uploadForm(state){
+  let ddoc = {
+    _id: '_design/studentform',
+    indexes: {
+      form: state
+    }
+  };
+  
+  db.insert(ddoc, (err, result) => {
+    if(err){
+      console.warn(err)
+    }
+    console.log(result)
+  })
+}
