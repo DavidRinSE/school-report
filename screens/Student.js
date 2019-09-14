@@ -1,6 +1,6 @@
 import React from 'react';
 import RadioButton from '../components/RadioButton.js';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, Text} from 'react-native';
 
 export default class Student extends React.Component {
     constructor(props){
@@ -20,15 +20,21 @@ export default class Student extends React.Component {
                     key: 2,
                 }
             ],
+            buttonSelected: "a student",
         }
     }
     render(){
+        let buttonChanged = (title) => {
+            this.setState({buttonSelected: title})
+        }
         return (
             <View style={styles.wrapper}>
                 <RadioButton
                     items={this.state.items}
+                    onChange={buttonChanged}
                 >
                 </RadioButton>
+                <Text>{this.state.buttonSelected}</Text>
             </View>
         )
     }
