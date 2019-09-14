@@ -19,14 +19,11 @@ export default class StudentLogin extends React.Component {
     return (
       <>
         <View style={styles.wrapperMain}>
-          <Text style={styles.title}>Freedom High School</Text>
-          <Image style={styles.imageMain} source={require('../../assets/high-school.png')} />
-          <Text style={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
-          </Text>
+          <Image style={styles.imageMain} source={require('../../assets/pike_main.png')} />
+          <Text style={styles.title}>Safe schools, safe communities.</Text>
+
           <View style={styles.inputWrapper}>
-            <Text style={styles.inputTitle}>Student ID</Text>
+            <Text style={styles.inputTitle}>Student Number</Text>
             <TextInput
               style={styles.textInput}
               onChangeText={studentId => this.setState({ studentId })}
@@ -57,27 +54,26 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   imageMain: {
-    width: 350,
-    height: 200,
     marginVertical: 'auto',
     padding: 10,
     marginVertical: 20,
   },
   title: {
-    fontSize: 26,
+    fontSize: 18,
     marginTop: 10,
-    fontWeight: 'bold',
+    color: 'gray',
   },
   inputWrapper: {
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
+    paddingTop: 80,
   },
   inputTitle: {
     alignSelf: 'flex-start',
-    paddingLeft: '10%',
-    fontWeight: 'bold',
+    paddingLeft: '8%',
+    color: 'gray',
   },
   description: {
     width: '75%',
@@ -87,17 +83,24 @@ const styles = StyleSheet.create({
   textInput: {
     height: 40,
     width: '85%',
-    borderColor: 'gray',
+    borderColor: 'black',
     borderWidth: 1,
+    borderRadius: 20,
+    paddingLeft: 10,
+    marginBottom: 40,
   },
+
   loginBtnContainer: {
-    paddingHorizontal: 50,
+    paddingHorizontal: 40,
     paddingVertical: 10,
-    backgroundColor: '#6558F5',
+    // backgroundColor: '#6558F5',
+    borderWidth: 1,
+    borderColor: 'black',
+    borderRadius: 30,
   },
   loginBtnText: {
-    color: 'white',
     fontSize: 18,
+    color: 'gray',
   },
   emergencyButton: {
     position: 'absolute',
