@@ -32,7 +32,11 @@ export default class RadioButton extends React.Component {
                     <Text>{item.title}</Text>
                     <TouchableOpacity 
                         style={styles.circle}
-                        onPress={() => this.setState({value: item.key})}
+                        onPress={() => {
+                                this.setState({value: item.key})
+                                this.props.onChange(item.title)
+                            }
+                        }
                     >
                         {(this.state.value === item.key) ? <View style={styles.checkedCircle}></View> : <View></View>}
                     </TouchableOpacity>
