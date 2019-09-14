@@ -1,1 +1,1 @@
-export * from "./form"
+export { default as Student }  from "./form"
