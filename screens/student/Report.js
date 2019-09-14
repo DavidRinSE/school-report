@@ -16,6 +16,7 @@ import RadioForm, {
 } from 'react-native-simple-radio-button';
 
 const Report = props => {
+  const {navigation} = props
   const [buttonState, setButtonState] = useState(0);
   const [inputValue, setInputValues] = useState('name');
   const [inputArray, setInputArray] = useState([0, 1]);
@@ -91,7 +92,7 @@ const Report = props => {
         <Button
           title="Report"
           color="purple"
-          // onPress={() => }
+          onPress={() => navigation.navigate('ReportSecond')}
         />
       </View>
     </ScrollView>
