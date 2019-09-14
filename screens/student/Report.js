@@ -96,7 +96,7 @@ const Report = props => {
                 <Button
                     title="Report"
                     color="purple"
-                    // onPress={() => }
+                    // onPress={() => uploadForm(this.state)}
                 />
             </View>
         </ScrollView>
@@ -151,3 +151,20 @@ const styles = StyleSheet.create({
 });
 
 export default Report;
+
+
+function uploadForm(state){
+    let ddoc = {
+      _id: '_design/studentform',
+      indexes: {
+        form: state
+      }
+    };
+    
+    db.insert(ddoc, (err, result) => {
+      if(err){
+        console.warn(err)
+      }
+      console.log(result)
+    })
+  }
