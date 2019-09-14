@@ -279,4 +279,4 @@ gradle-app.setting
 
 # End of https://www.gitignore.io/api/reactnative
 
-database.json.info
+database.json
