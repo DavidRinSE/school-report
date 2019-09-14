@@ -4,7 +4,13 @@ const appSettings = {
   cloudant_db_name: 'genericSchool'
 }
 
+
 module.exports = class DB {
+  /**
+   *Use Object.db to access document object
+   *Function list available here https://github.com/apache/couchdb-nano#document-functions
+   *Can't access database functions, so no new sheets :/
+   */
   constructor(){
     this.db = this.dbCloudantConnect()
   }
