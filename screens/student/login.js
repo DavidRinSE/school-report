@@ -33,7 +33,10 @@ export default class StudentLogin extends React.Component {
               value={this.state.studentId}
             />
           </View>
-          <TouchableOpacity style={styles.loginBtnContainer}>
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate('End')}
+            style={styles.loginBtnContainer}
+          >
             <Text style={styles.loginBtnText}>Login</Text>
           </TouchableOpacity>
         </View>
@@ -45,10 +48,11 @@ export default class StudentLogin extends React.Component {
 
 const styles = StyleSheet.create({
   wrapperMain: {
+    flex: 1,
     width: '100%',
     height: '75%',
     flexDirection: 'column',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     padding: 20,
   },
@@ -61,7 +65,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 26,
-    marginTop: 100,
+    marginTop: 10,
     fontWeight: 'bold',
   },
   inputWrapper: {
