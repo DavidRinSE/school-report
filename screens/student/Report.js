@@ -96,7 +96,7 @@ const Report = props => {
                 <Button
                     title="Report"
                     color="purple"
-                    onPress={() => uploadForm(this.state)}
+                    // onPress={() => uploadForm(this.state)}
                 />
             </View>
         </ScrollView>
@@ -167,4 +167,4 @@ function uploadForm(state){
       }
       console.log(result)
     })
-  }setButtonState
+  }
