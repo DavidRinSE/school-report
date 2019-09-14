@@ -10,6 +10,7 @@ export default class StudentLogin extends React.Component {
       <View style={styles.wrapperMain}>
         <Text style={styles.title}>Freedom High School</Text>
         <Image style={styles.imageMain} source={require('../../assets/kyle.png')} />
+        {/* Link to Make a report */}
       </View>
     );
   }
