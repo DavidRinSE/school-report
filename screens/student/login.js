@@ -34,7 +34,7 @@ export default class StudentLogin extends React.Component {
             />
           </View>
           <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('End')}
+            onPress={() => this.props.navigation.navigate('Report')}
             style={styles.loginBtnContainer}
           >
             <Text style={styles.loginBtnText}>Login</Text>
