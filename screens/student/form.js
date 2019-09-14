@@ -1,5 +1,6 @@
 import React from 'react';
-import RadioButton from '../../components/RadioButton';
+import RadioButton from '../components/RadioButton';
+import Person from '../components/Person';
 import {StyleSheet, View, Text} from 'react-native';
 
 export default class Student extends React.Component {
@@ -21,20 +22,25 @@ export default class Student extends React.Component {
                 }
             ],
             buttonSelected: "a student",
+            textInputs: {
+                0: "",
+                1: "",
+                2: "",
+            },
         }
     }
     render(){
         let buttonChanged = (title) => {
             this.setState({buttonSelected: title})
         }
+        let textChanged = (text, index) => {
+            let textInputs = this.state.textInputs
+            textInputs[index] = text
+            this.setState({textInputs: textInputs})
+        }
         return (
             <View style={styles.wrapper}>
-                <RadioButton
-                    items={this.state.items}
-                    onChange={buttonChanged}
-                >
-                </RadioButton>
-                <Text>{this.state.buttonSelected}</Text>
+                
             </View>
         )
     }
