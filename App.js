@@ -1,6 +1,7 @@
 import React from 'react';
 import Admin from './screens/admin/Admin.js';
 import StudentLogin from './screens/student/login.js';
+import Report from './screens/report/Report'
 import End from './screens/student/end.js';
 import Login from './screens/student/login';
 import { createAppContainer } from 'react-navigation';
@@ -15,6 +16,4 @@ const MainNavigator = createStackNavigator({
   End: { screen: EndScreen },
 });
 const App = createAppContainer(MainNavigator);
-
 export default App;
-// return this.state.isAdmin ? <Admin /> : <Login />;
