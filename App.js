@@ -1,6 +1,6 @@
 import React from 'react';
-import {Admin} from "./screens/admin";
-import {Student} from "./screens/student";
+import Admin from './screens/admin/Admin.js';
+import StudentLogin from './screens/student/login.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -10,15 +10,7 @@ export default class App extends React.Component {
     };
   }
 
-  // async componentDidMount() {
-    
-  // }
-
   render() {
-    // if (!this.state.isReady) {
-    //   return <AppLoading />;
-    // }
-
-    return ((this.state.isAdmin) ? <Admin /> : <Student />);
+    return this.state.isAdmin ? <Admin /> : <StudentLogin />;
   }
 }
