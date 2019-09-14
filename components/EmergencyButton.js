@@ -7,7 +7,9 @@ import {
   Text,
   TouchableWithoutFeedback,
   Alert,
+  Linking,
 } from 'react-native';
+import Communications from 'react-native-communications';
 
 var ACTION_TIMER = 800;
 
@@ -38,7 +40,8 @@ export default class EmergencyButton extends React.Component {
   };
   animationActionComplete = () => {
     if (this._value === 1) {
-      Alert.alert('Are you sure you want to make an emergency call?');
+      // Alert.alert('Are you sure you want to make an emergency call?');
+      Communications.phonecall('13176948342', true);
     }
   };
   getButtonWidthLayout = e => {
@@ -71,6 +74,7 @@ export default class EmergencyButton extends React.Component {
       <View style={[styles.container, this.props.style]}>
         <TouchableWithoutFeedback onPressIn={this.handlePressIn} onPressOut={this.handlePressOut}>
           <View style={styles.button} onLayout={this.getButtonWidthLayout}>
+            <Text style={styles.title}>911</Text>
             <Animated.View style={[styles.bgFill, this.getProgressStyles()]} />
           </View>
         </TouchableWithoutFeedback>
@@ -90,21 +94,28 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
   },
   button: {
-    height: 50,
-    width: 50,
-    borderRadius: 50,
+    height: 80,
+    width: 80,
+    borderRadius: 80,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#EDB4BD',
+    backgroundColor: '#D84140',
+    borderWidth: 2,
+    borderColor: 'black',
   },
   text: {
     backgroundColor: 'transparent',
     color: '#111',
   },
   bgFill: {
-    backgroundColor: '#EDB4BD',
+    backgroundColor: '#D84140',
     borderRadius: 50,
     position: 'absolute',
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: 'white',
   },
 });
 
