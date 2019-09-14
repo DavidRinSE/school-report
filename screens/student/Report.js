@@ -16,16 +16,9 @@ import RadioForm, {
 } from 'react-native-simple-radio-button';
 
 const Report = props => {
-<<<<<<< HEAD
   const [buttonState, setButtonState] = useState(0);
   const [inputValue, setInputValues] = useState('name');
   const [inputArray, setInputArray] = useState([0, 1]);
-=======
-    const {navigation} = props
-    const [buttonState, setButtonState] = useState(0);
-    const [inputValue, setInputValues] = useState('name');
-    const [inputArray, setInputArray] = useState([0, 1]);
->>>>>>> 34cb7db8585a877322a8e0b64cd72ae7c795369e
 
   const radioProps = [
     { label: 'student', value: 0 },
