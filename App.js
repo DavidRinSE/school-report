@@ -1,6 +1,7 @@
 import React from 'react';
 import Admin from './screens/admin/Admin.js';
 import StudentLogin from './screens/student/login.js';
+import End from './screens/student/end.js';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -11,6 +12,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    return this.state.isAdmin ? <Admin /> : <StudentLogin />;
+    return this.state.isAdmin ? <Admin /> : <End />;
   }
 }
