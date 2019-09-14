@@ -14,7 +14,5 @@ export default class App extends React.Component {
 
   render() {
     return this.state.isAdmin ? <Admin /> : <StudentLogin />;
-    // return <Report/>
-    return this.state.isAdmin ? <Admin /> : <End />;
   }
 }
