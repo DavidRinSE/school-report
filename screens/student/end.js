@@ -15,7 +15,7 @@ export default class End extends React.Component {
                     <Text style={styles.subtext}>Your report will be investigated as soon as possible.</Text>
                     <Text style={styles.subtext}>If you have any more issues, you can contact your school officer directly or speak to your grade-level counselor.</Text>
                 </View>
-                <TouchableOpacity style={styles.button} onPress={this.props.onPress}><Text>Close</Text></TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={()=> this.props.navigation.navigate("Home")}><Text>Close</Text></TouchableOpacity>
             </View>
         )
     }
