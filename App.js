@@ -1,6 +1,7 @@
 import React from 'react';
 import Admin from './screens/admin/Admin.js';
 import StudentLogin from './screens/student/login.js';
+import Report from './screens/report/Report'
 import End from './screens/student/end.js';
 
 export default class App extends React.Component {
@@ -12,6 +13,8 @@ export default class App extends React.Component {
   }
 
   render() {
+    return this.state.isAdmin ? <Admin /> : <StudentLogin />;
+    // return <Report/>
     return this.state.isAdmin ? <Admin /> : <End />;
   }
 }
