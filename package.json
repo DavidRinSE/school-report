@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "cloudant": "^1.10.0-NOTICE",
     "expo": "^34.0.1",
     "native-base": "^2.13.8",
     "react": "16.8.3",
