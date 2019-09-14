@@ -111,6 +111,7 @@ var styles = StyleSheet.create({
     backgroundColor: '#D84140',
     borderRadius: 50,
     position: 'absolute',
+    zIndex: -1,
   },
   title: {
     fontSize: 22,
