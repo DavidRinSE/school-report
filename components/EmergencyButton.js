@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import Communications from 'react-native-communications';
 
-var ACTION_TIMER = 800;
+var ACTION_TIMER = 1200;
 
 export default class EmergencyButton extends React.Component {
   state = {
