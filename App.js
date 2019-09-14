@@ -1,6 +1,6 @@
 import React from 'react';
-import Admin from './screens/Admin.js';
-import Student from './screens/Student.js';
+import {Admin} from "./screens/admin";
+import {Student} from "./screens/student";
 
 export default class App extends React.Component {
   constructor(props) {

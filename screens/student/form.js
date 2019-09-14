@@ -1,5 +1,5 @@
 import React from 'react';
-import RadioButton from '../components/RadioButton.js';
+import RadioButton from '../../components';
 import {StyleSheet, View, Text} from 'react-native';
 
 export default class Student extends React.Component {
